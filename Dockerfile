@@ -17,4 +17,4 @@ RUN apk add --update \
 COPY files/etc/docker/start.sh /etc/docker/start.sh
 RUN chmod +x /etc/docker/start.sh
 
-CMD ["bash"]
+CMD ["/etc/docker/start.sh"]

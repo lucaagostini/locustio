@@ -2,6 +2,9 @@
 
 LOCUSTIO_PATH=./opt/locustio
 
+echo "Waiting..."
+sleep 5s
+
 mkdir -p ${LOCUSTIO_PATH}
 cd ${LOCUSTIO_PATH}
 
