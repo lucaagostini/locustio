@@ -30,9 +30,9 @@ fi
 if [ ! -z "${LOCUSTIO_MASTER}" ];
 then
     echo "Running slave"
-    locust -f ./script.py --slave --master-host=${LOCUSTIO_MASTER}
+    locust -f ${LOCUSTIO_PATH}/script.py --slave --master-host=${LOCUSTIO_MASTER} --host=${LOCUSTIO_HOST}
 else
     echo "Running master"
-    locust -f ${LOCUSTIO_PATH}/script.py --host=${LOCUSTIO_HOST}
+    locust -f ${LOCUSTIO_PATH}/script.py --master --host=${LOCUSTIO_HOST}
 fi
 
