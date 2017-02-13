@@ -24,7 +24,7 @@ then
     exit 1
 else
     echo "Downloading script"
-    wget -S -O ${LOCUSTIO_PATH}/script.py ${LOCUSTIO_SCRIPT}
+    wget -O ${LOCUSTIO_PATH}/script.py ${LOCUSTIO_SCRIPT}
 fi
 
 if [ ! -z "${LOCUSTIO_MASTER}" ];
