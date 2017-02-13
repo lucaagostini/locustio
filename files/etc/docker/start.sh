@@ -15,7 +15,7 @@ echo "LOCUSTIO_MASTER: set the master endpoint"
 if [ -z "${LOCUSTIO_HOST}" ];
 then
     echo "Host not set, please set the LOCUSTIO_HOST variable"
-    exit 1
+    LOCUSTIO_HOST="http://127.0.0.1"
 fi
 
 if [ -z "${LOCUSTIO_SCRIPT}" ];
