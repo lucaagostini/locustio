@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-LOCUSTIO_PATH=./opt/locustio
+LOCUSTIO_PATH=/opt/locustio
 
 echo "Waiting..."
 sleep 5s
@@ -33,6 +33,6 @@ then
     locust -f ./script.py --slave --master-host=${LOCUSTIO_MASTER}
 else
     echo "Running master"
-    locust -f ./script.py --host=${LOCUSTIO_HOST}
+    locust -f ${LOCUSTIO_PATH}/script.py --host=${LOCUSTIO_HOST}
 fi
 
